@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vida Verde — Contato</title>
+  <meta name="description" content="Fale com a Vida Verde — voluntariado, imprensa, parcerias e doações." />
+  <link rel="stylesheet" href="style.css" />
+  <body class="contato-page">
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><span class="logo">🌱</span><span class="brand-name">Vida Verde</span></a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" class="nav-link">Início</a></li>
+          <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+          <li><a href="programas.html" class="nav-link">Programas</a></li>
+          <li><a href="contato.html" class="nav-link active">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="index.html#doar" class="btn primary">Doar</a>
+        <button id="menuToggle5" class="icon-btn menu-btn">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu5" aria-hidden="true">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="programas.html">Programas</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contato</h1>
+        <p class="lead">Estamos disponíveis para parcerias, imprensa, doações e voluntariado.</p>
+      </div>
+    </section>
+
+    <section class="container contact-grid">
+      <div class="contact-card">
+        <h3>Fale conosco</h3>
+        <p>Email: <a href="mailto:contato@vidaverde.org">vidaverde@gmail.com</a></p>
+        <p>Telefone: (79) 9999-0000</p>
+        <p>Endereço: Aracaju</p>
+        <div class="social-links">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <label for="cName">Nome</label>
+        <input id="cName" name="name" required />
+        <label for="cEmail">E-mail</label>
+        <input id="cEmail" name="email" type="email" required />
+        <label for="cSubject">Assunto</label>
+        <select id="cSubject" name="subject">
+          <option>Parceria</option>
+          <option>Voluntariado</option>
+          <option>Doações</option>
+          <option>Imprensa</option>
+          <option>Eventos</option>
+          <option>Outro</option>
+        </select>
+        <label for="cMessage">Mensagem</label>
+        <textarea id="cMessage" name="message" rows="6" required></textarea>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Enviar mensagem</button>
+          <button class="btn ghost" type="reset">Limpar</button>
+        </div>
+        <p id="contactFeedback" class="hint" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h3>Vida Verde</h3><p>ONG — contato e suporte.</p></div>
+      <div><h4>Links</h4><ul><li><a href="index.html">Início</a></li></ul></div>
+      <div><h4>Contato</h4><p>vidaverde@gmail.com</p></div>
+      <div><iframe title="Mapa" src="https://maps.google.com/maps?q=Parque%20da%20Cidade&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe></div>
+    </div>
+    <div class="container footer-bottom"><p>© <span id="yearContact"></span> Vida Verde</p></div>
+  </footer>
+
+  <script>
+    document.getElementById('yearContact').textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

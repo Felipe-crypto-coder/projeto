@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vida Verde — Programas</title>
+  <meta name="description" content="Programas e projetos da Vida Verde: reflorestamento, educação, resíduos e mais." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><span class="logo">🌱</span><span class="brand-name">Vida Verde</span></a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" class="nav-link">Início</a></li>
+          <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+          <li><a href="programas.html" class="nav-link active">Programas</a></li>
+          <li><a href="contato.html" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="index.html#doar" class="btn primary">Doar</a>
+        <button id="menuToggle3" class="icon-btn menu-btn">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu3" aria-hidden="true">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="programas.html">Programas</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Programas</h1>
+        <p class="lead">Conheça nossos projetos e como participar.</p>
+      </div>
+    </section>
+
+    <section class="container program-list">
+      <div class="filter-row">
+        <label for="filterCat">Filtrar por:</label>
+        <select id="filterCat">
+          <option value="all">Todos</option>
+          <option value="reflorestamento">Reflorestamento</option>
+          <option value="educacao">Educação</option>
+          <option value="residuos">Resíduos</option>
+        </select>
+        <input id="searchProgram" placeholder="Buscar programa..." />
+      </div>
+
+      <div class="grid-3" id="programGrid">
+        <!-- cards serão populados via JS -->
+      </div>
+    </section>
+
+    <section class="container program-details">
+      <h2>Como funcionam nossos projetos</h2>
+      <p>Nossos projetos têm etapas claras: diagnóstico, engajamento comunitário, plantio ou implementação, monitoramento e avaliação de impacto.</p>
+      <ol>
+        <li>Diagnóstico técnico com parceiros locais</li>
+        <li>Planejamento participativo</li>
+        <li>Execução com voluntariado e cooperativas</li>
+        <li>Monitoramento e relatório público</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h3>Vida Verde</h3><p>Projetos com impacto real.</p></div>
+      <div><h4>Links</h4><ul><li><a href="index.html">Início</a></li></ul></div>
+      <div><h4>Contato</h4><p>vidaverde@gmail.com</p></div>
+      <div><iframe title="Mapa" src="https://maps.google.com/maps?q=Parque%20da%20Cidade&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe></div>
+    </div>
+    <div class="container footer-bottom"><p>© <span id="yearPrograms"></span> Vida Verde</p></div>
+  </footer>
+
+  <script>
+    // Dados locais de programas (simulados)
+    const PROGRAMS_DATA = [
+      { id:1, cat:'reflorestamento', title:'Corredores de Mata Atlântica', short:'Reconexão de fragmentos florestais', img:'https://images.unsplash.com/photo-1508919801845-fc2ae1bc2a28?q=80&w=1200&auto=format&fit=crop', detail:'Projeto de grande escala com mapeamento, viveiro e monitoramento pós-plantio.' },
+      { id:2, cat:'educacao', title:'Clima na Comunidade', short:'Capacitação sobre adaptação climática', img:'https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1200&auto=format&fit=crop', detail:'Oficinas para lideranças e material didático aberto.' },
+      { id:3, cat:'reflorestamento', title:'Nascentes Vivas', short:'Proteção de matas ciliares e nascentes', img:'https://images.unsplash.com/photo-1465101162946-4377e57745c3?q=80&w=1200&auto=format&fit=crop', detail:'Recuperação de APPs e cercamento com ações sociais.' }
+    ];
+
+    // Render inicial — será manipulado pelo script.js global
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('programGrid');
+      PROGRAMS_DATA.forEach(p => {
+        const el = document.createElement('article');
+        el.className = 'program-card';
+        el.dataset.cat = p.cat;
+        el.innerHTML = `
+          <div class="pc-media" style="background-image:url('${p.img}')"></div>
+          <div class="pc-body">
+            <h3>${p.title}</h3>
+            <p class="muted">${p.short}</p>
+            <p>${p.detail}</p>
+            <div class="pc-actions">
+              <a class="btn small" href="contato.html">Participar</a>
+              <button class="btn ghost small" data-id="${p.id}">Saiba mais</button>
+            </div>
+          </div>
+        `;
+        grid.appendChild(el);
+      });
+
+      // preencher ano rodapé
+      document.getElementById('yearPrograms').textContent = new Date().getFullYear();
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

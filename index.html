@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vida Verde — Início</title>
+  <meta name="description" content="ONG Vida Verde — Reflorestamento, educação e ações comunitárias. Junte-se a nós." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Home - Vida Verde">
+        <span class="logo">🌱</span>
+        <span class="brand-name">Vida Verde</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" class="nav-link active">Início</a></li>
+          <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+          <li><a href="programas.html" class="nav-link">Programas</a></li>
+          <li><a href="contato.html" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-btn" aria-pressed="false" title="Alternar tema">🌓</button>
+        <a href="#doar" class="btn primary">Doar</a>
+        <button id="menuToggle" class="icon-btn menu-btn" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="programas.html">Programas</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="#doar" class="btn primary">Doar</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <h1>Preservando hoje, transformando amanhã.</h1>
+          <p class="lead">A Vida Verde mobiliza pessoas para restaurar ecossistemas, reduzir resíduos e promover educação ambiental.</p>
+          <div class="hero-ctas">
+            <a href="contato.html" class="btn outline">Seja voluntário</a>
+            <button class="btn primary" id="openDonateHero">Fazer doação</button>
+            <a href="programas.html" class="link-muted">Conheça nossos programas →</a>
+          </div>
+
+          <ul class="impact-list" aria-hidden="false">
+            <li><strong data-counter="12500">0</strong><span>Árvores plantadas</span></li>
+            <li><strong data-counter="480">0</strong><span>t de resíduos reciclados</span></li>
+            <li><strong data-counter="320">0</strong><span>escolas atendidas</span></li>
+            <li><strong data-counter="9800">0</strong><span>pessoas impactadas</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <div class="card-hero">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1400&auto=format&fit=crop" alt="Mãos segurando mudas" />
+            <figcaption>Mutirão de reflorestamento — comunidade local</figcaption>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE RÁPIDO -->
+    <section class="brief container">
+      <div class="brief-grid">
+        <div>
+          <h2>Quem somos</h2>
+          <p>A Vida Verde é uma organização sem fins lucrativos que atua em projetos de restauração, educação socioambiental e fortalecimento de cadeias locais de reciclagem.</p>
+          <p><a class="link" href="sobre.html">Saiba mais sobre nossa trajetória →</a></p>
+        </div>
+        <div class="features">
+          <article class="feature">
+            <div class="ico">🌳</div>
+            <div>
+              <h3>Reflorestamento</h3>
+              <p>Protegemos nascentes e replantamos espécies nativas.</p>
+            </div>
+          </article>
+          <article class="feature">
+            <div class="ico">📚</div>
+            <div>
+              <h3>Educação</h3>
+              <p>Oficinas em escolas e comunidades para formar novos agentes ambientais.</p>
+            </div>
+          </article>
+          <article class="feature">
+            <div class="ico">♻️</div>
+            <div>
+              <h3>Resíduos</h3>
+              <p>Cooperativas, logística reversa e campanhas de redução.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMAS (preview) -->
+    <section class="programs container" id="programsPreview">
+      <div class="section-head">
+        <h2>Programas em destaque</h2>
+        <a href="programas.html" class="link">Ver todos →</a>
+      </div>
+
+      <div class="grid-3">
+        <article class="program-card">
+          <div class="pc-media" style="background-image:url('https://images.unsplash.com/photo-1508919801845-fc2ae1bc2a28?q=80&w=1400&auto=format&fit=crop')"></div>
+          <div class="pc-body">
+            <h3>Corredores de Mata Atlântica</h3>
+            <p>Reconexão de fragmentos florestais e plantios orientados por especialistas locais.</p>
+            <div class="pc-actions">
+              <a href="programas.html#reflorestamento" class="btn small">Ver programa</a>
+              <button class="btn ghost small" data-fav="1">Salvar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="program-card">
+          <div class="pc-media" style="background-image:url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1400&auto=format&fit=crop')"></div>
+          <div class="pc-body">
+            <h3>Clima na Comunidade</h3>
+            <p>Oficinas de adaptação climática e capacitação de lideranças locais.</p>
+            <div class="pc-actions">
+              <a href="programas.html#educacao" class="btn small">Ver programa</a>
+              <button class="btn ghost small" data-fav="3">Salvar</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EVENTOS -->
+    <section class="events container" id="events">
+      <div class="section-head">
+        <h2>Próximos eventos</h2>
+        <a class="link" id="downloadAllEvents">Exportar eventos (.ics)</a>
+      </div>
+      <div class="event-list">
+        <div class="event-card">
+          <div class="event-date">20<span>set</span></div>
+          <div class="event-body">
+            <h3>Mutirão de plantio — Parque do Pinheiro</h3>
+            <p>Curitiba/PR • 09:00 — 12:00</p>
+            <div class="event-actions">
+              <button class="btn small add-ics" data-title="Mutirão de plantio — Parque do Pinheiro" data-dt="2025-09-20T09:00:00">Adicionar ao calendário</button>
+              <a href="contato.html" class="link">Inscrever-se →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date">05<span>out</span></div>
+          <div class="event-body">
+            <h3>Oficina Lixo Zero — Escola Modelo</h3>
+            <p>São José dos Pinhais/PR • 14:00 — 17:00</p>
+            <div class="event-actions">
+              <button class="btn small add-ics" data-title="Oficina Lixo Zero — Escola Modelo" data-dt="2025-10-05T14:00:00">Adicionar ao calendário</button>
+              <a href="contato.html" class="link">Inscrever-se →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials container">
+      <h2>Depoimentos</h2>
+      <div class="carousel" id="testiCarousel" aria-roledescription="carousel">
+        <div class="slide active">
+          <div class="slide-inner">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop" alt="foto voluntária" />
+            <blockquote>“Participar do plantio mudou minha relação com a cidade — e com meus vizinhos.”</blockquote>
+            <cite>Rosa M. — Professora</cite>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-inner">
+            <img src="c:\Users\felip\OneDrive\Imagens\download.jpg" alt="foto voluntário" />
+            <blockquote>“A clareza nas metas e a transparência me convenceram a apoiar a ONG.”</blockquote>
+            <cite>Tiago S. — Voluntário</cite>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-inner">
+            <img src="c:\Users\felip\OneDrive\Imagens\site-vacinacao-33-anos.png" alt="foto parceira" />
+            <blockquote>“A parceria transformou a logística de reciclagem na nossa cooperativa.”</blockquote>
+            <cite>Heloísa P. — Parceira</cite>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="icon-btn" id="prevTesti" aria-label="Anterior">◀</button>
+        <button class="icon-btn" id="nextTesti" aria-label="Próximo">▶</button>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter container">
+      <div class="newsletter-inner">
+        <h3>Receba novidades e convites</h3>
+        <form id="newsletterForm" class="inline-form" novalidate>
+          <input type="email" id="newsletterEmail" placeholder="Seu melhor e-mail" required />
+          <button class="btn primary" type="submit">Assinar</button>
+        </form>
+        <p class="hint">Sem spam. Você pode cancelar a inscrição a qualquer momento.</p>
+      </div>
+    </section>
+
+    <!-- DOAÇÃO (section-target) -->
+    <section id="doar" class="donation container">
+      <div class="section-head">
+        <h2>Faça sua doação</h2>
+        <p>Transparência total — acompanhe o uso do recurso em nosso relatório.</p>
+      </div>
+
+      <div class="donation-grid">
+        <div class="donation-card">
+          <h3>Doação recorrente</h3>
+          <p>Contribua mensalmente e receba relatórios exclusivos.</p>
+          <div class="amounts">
+            <button class="chip" data-amt="30">R$30</button>
+            <button class="chip" data-amt="60">R$60</button>
+            <button class="chip" data-amt="120">R$120</button>
+          </div>
+          <button class="btn primary open-donate">Doar</button>
+        </div>
+
+        <div class="donation-card">
+          <h3>Doação pontual</h3>
+          <p>Escolha um valor livre ou use os valores sugeridos.</p>
+          <form id="donateForm" class="donate-form" novalidate>
+            <label for="donorName">Nome</label>
+            <input id="donorName" name="name" placeholder="Seu nome" required />
+            <label for="donorEmail">E-mail</label>
+            <input id="donorEmail" name="email" type="email" placeholder="email@exemplo.com" required />
+            <label for="donorAmount">Valor (R$)</label>
+            <input id="donorAmount" name="amount" inputmode="decimal" placeholder="Ex.: 50,00" />
+            <div class="donate-actions">
+              <button class="btn primary" type="submit">Contribuir</button>
+              <button type="button" class="btn ghost" id="donateCancel">Cancelar</button>
+            </div>
+            <p id="donateFeedback" class="hint" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="f-about">
+        <h3>Vida Verde</h3>
+        <p>ONG dedicada à restauração ecológica, educação ambiental e impacto social.</p>
+      </div>
+
+      <div class="f-links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="programas.html">Programas</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="f-contact">
+        <h4>Contato</h4>
+        <p>vidaverde@gmail.com</p>
+        <p>(79) 9999-0000</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+        </div>
+      </div>
+
+      <div class="f-map">
+        <h4>Localização</h4>
+        <iframe title="Mapa Vida Verde" src="https://maps.google.com/maps?q=Parque%20da%20Cidade&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="ftYear"></span> Vida Verde — Todos os direitos reservados</p>
+      <small class="muted">CNPJ (fictício): 00.000.000/0000-00 • Política de privacidade</small>
+    </div>
+  </footer>
+
+  <!-- MODAL DE DOAÇÃO (overlay global) -->
+  <div id="donateModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-card" role="document">
+      <button class="modal-close icon-btn" id="closeDonate" aria-label="Fechar">✕</button>
+      <h3>Contribua com a Vida Verde</h3>
+      <p>Escolha um valor ou insira outro. Receba recibo por e-mail.</p>
+      <div class="modal-amounts">
+        <button class="chip" data-amt="30">R$30</button>
+        <button class="chip" data-amt="60">R$60</button>
+        <button class="chip" data-amt="120">R$120</button>
+      </div>
+      <form id="modalDonateForm" class="modal-form" novalidate>
+        <label for="mName">Nome</label>
+        <input id="mName" name="name" required />
+        <label for="mEmail">E-mail</label>
+        <input id="mEmail" name="email" type="email" required />
+        <label for="mAmount">Valor (R$)</label>
+        <input id="mAmount" name="amount" inputmode="decimal" placeholder="Ex.: 50,00" />
+        <div class="modal-actions">
+          <button class="btn primary" type="submit">Confirmar doação</button>
+          <button class="btn ghost" type="button" id="modalCancel">Cancelar</button>
+        </div>
+        <p id="modalFeedback" class="hint" role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
