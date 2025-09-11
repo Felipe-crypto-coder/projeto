@@ -65,7 +65,7 @@ body{
 /* Mobile menu */
 .mobile-menu{display:none;background:var(--surface);border-top:1px solid rgba(255,255,255,0.03)}
 .mobile-menu ul{list-style:none}
-.mobile-menu a{display:block;padding:12px 18px;color:var(--text);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.02)}
+.mobile-menu a{display:block;padding:12px 20px;color:var(--text);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.02)}
 
 /* HERO */
 .hero{padding:48px 0}
@@ -232,6 +232,7 @@ body.contato-page textarea:focus {
   outline: none;
   box-shadow: 0 0 0 2px #eaeaea;
 }
+
 
 
 
